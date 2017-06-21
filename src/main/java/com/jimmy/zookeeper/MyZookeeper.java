@@ -21,6 +21,6 @@ public class MyZookeeper {
         });
         List<String> children = zooKeeper.getChildren("/", true);
         children.forEach(child -> System.out.println(child));
-        System.out.println("!!!"+new String(zooKeeper.getData("/soa/config/service",true,null)));
+        System.out.println("!!!"+new String(zooKeeper.getData("/testRootPath",true,null)));
     }
 }
